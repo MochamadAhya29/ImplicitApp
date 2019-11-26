@@ -3,35 +3,39 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".Email">
+    android:layout_height="match_parent"
+    tools:context=".Sms">
 
 
     <EditText
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/edt_email"
-        android:inputType="textEmailAddress"
-        android:hint="To"/>
+        android:id="@+id/to"
+        android:hint="To"
+        android:clickable="false"
+        android:focusable="false"
+        android:inputType="phone"/>
 
     <EditText
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/edt_subject"
-        android:hint="Subject"/>
+        android:id="@+id/edt_body_sms"
+        android:hint="Message"
+        android:lines="5"/>
 
-    <EditText
+    <Button
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/edt_body_email"
-        android:gravity="top"
-        android:lines="5"
-        android:hint="Compose Email"/>
-        <Button
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Send"
-            android:id="@+id/btn_send"/>
+        android:id="@+id/btn_send"
+        android:text="Quick SMS Send"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/btn_send_intent"
+        android:text="Intent SMS Send"/>
+
+
 
 </LinearLayout>

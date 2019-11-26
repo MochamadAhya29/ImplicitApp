@@ -32,4 +32,16 @@
         android:id="@+id/btn_email"
         android:text="Email"/>
 
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/btn_sms"
+        android:text="SMS"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/btn_alarm"
+        android:text="Alarm"/>
+
 </LinearLayout>
